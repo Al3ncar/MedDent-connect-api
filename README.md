@@ -1,8 +1,7 @@
-# WebConnect API
+# MedDent connect API
 
 API REST desenvolvida com **Node.js** e **Express** para gerenciamento de registros de pessoas.
 O projeto segue uma estrutura simples baseada em **controllers, models, rotas e utilidades**, facilitando manutenção e escalabilidade.
-
 
 - Segue tambem o projeto em front-end: https://github.com/Al3ncar/MedDent-connect
 
@@ -10,11 +9,11 @@ O projeto segue uma estrutura simples baseada em **controllers, models, rotas e 
 
 # 📌 Tecnologias Utilizadas
 
-* Node.js
-* Express
-* CORS
-* Dotenv
-* Nodemon (ambiente de desenvolvimento)
+- Node.js
+- Express
+- CORS
+- Dotenv
+- Nodemon (ambiente de desenvolvimento)
 
 ---
 
@@ -59,10 +58,10 @@ Cada função recebe a requisição (`req`) e retorna a resposta (`res`).
 
 Exemplo de responsabilidades:
 
-* Buscar registros
-* Criar registros
-* Atualizar registros
-* Deletar registros
+- Buscar registros
+- Criar registros
+- Atualizar registros
+- Deletar registros
 
 ---
 
@@ -163,9 +162,9 @@ Responsável por validar dados recebidos nas requisições antes de serem proces
 
 Exemplos de validações possíveis:
 
-* Campos obrigatórios
-* Formato de email
-* Estrutura dos dados enviados no body
+- Campos obrigatórios
+- Formato de email
+- Estrutura dos dados enviados no body
 
 ---
 
@@ -355,12 +354,12 @@ nodemon
 
 # ⚠️ Possíveis Melhorias Futuras
 
-* Integração com banco de dados (MongoDB, PostgreSQL ou MySQL)
-* Implementação de autenticação (JWT)
-* Camada de serviços (Service Layer)
-* Testes automatizados
-* Documentação com Swagger
-* Validação mais robusta de dados
+- Integração com banco de dados (MongoDB, PostgreSQL ou MySQL)
+- Implementação de autenticação (JWT)
+- Camada de serviços (Service Layer)
+- Testes automatizados
+- Documentação com Swagger
+- Validação mais robusta de dados
 
 ---
 
