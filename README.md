@@ -3,6 +3,9 @@
 API REST desenvolvida com **Node.js** e **Express** para gerenciamento de registros de pessoas.
 O projeto segue uma estrutura simples baseada em **controllers, models, rotas e utilidades**, facilitando manutenção e escalabilidade.
 
+
+- Segue tambem o projeto em front-end: https://github.com/Al3ncar/MedDent-connect
+
 ---
 
 # 📌 Tecnologias Utilizadas
