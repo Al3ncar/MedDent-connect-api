@@ -1,4 +1,4 @@
-import dataAllPerson from "../utils/data-person.js";
+import dataAllPerson from "./data-person.js";
 
 const rgxValid = (rgxCode, value) => {
   const regex = rgxCode;
@@ -23,7 +23,7 @@ const allRegexValid = (personData) => {
   );
 };
 
-const validEqualData = (value, field) => {
+export const validEqualData = (value, field) => {
   return dataAllPerson.some((person) => person[field] === value);
 };
 
