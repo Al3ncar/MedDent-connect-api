@@ -17,7 +17,7 @@ export const createRegister = async (req, res) => {
     const updatePeople = addPerson(req.body, res);
     responseAPI(res, 201, updatePeople);
   } catch (e) {
-    responseAPI(res, 400, []);
+    responseAPI(res, 404, []);
   }
 };
 
