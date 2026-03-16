@@ -1,4 +1,9 @@
-import { getAllPersons, addPerson } from "../models/personModel.js";
+import {
+  addPerson,
+  getAllPersons,
+  updatePerson,
+  deletePerson,
+} from "../models/personModel.js";
 import { responseAPI } from "../utils/response.js";
 
 export const getHome = (req, res) => {
@@ -10,9 +15,28 @@ export const getRegisters = (req, res) => res.json(getAllPersons());
 export const createRegister = async (req, res) => {
   try {
     const updatePeople = addPerson(req.body, res);
-    responseAPI(res, "Registro criado com sucesso", 201, updatePeople);
+    responseAPI(res, 201, updatePeople);
   } catch (e) {
-    responseAPI(res, "Ocorreu um erro ao processar a requisição", 400);
+    responseAPI(res, 400, []);
   }
-}; 
- 
+};
+
+export const updateRegister = async (req, res) => {
+  try {
+    const { id } = req.params;
+    const person = updatePerson(id, req.body);
+    responseAPI(res, 200, person);
+  } catch (e) {
+    responseAPI(res, 200, []);
+  }
+};
+
+export const deleteRegister = async (req, res) => {
+  try {
+    const { id } = req.params;
+    deletePerson(id);
+    responseAPI(res, 200, []);
+  } catch (e) {
+    responseAPI(res, 400, []);
+  }
+};
